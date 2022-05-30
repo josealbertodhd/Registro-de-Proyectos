@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="page_main">
+    <main class="main_form">
+      <header class="header_form">
+        <h2><i class="fa-solid fa-file"></i> Registro de Proyectos</h2>
+      </header>
+
+      <form class="form_items">
+        <input type="number" placeholder="Digite Codigo" name="codigo_proyecto" id="codigo_proyecto">
+        <input type="text" placeholder="Digite Nombre" name="nombre_proyecto" id="nombre_proyecto">
+        <input type="text" placeholder="Digite Descripcion" name="descripcion_proyecto" id="descripcion_proyecto">
+        <input type="date" name="fecha_inicio_proyecto" id="fecha_inicio_proyecto">
+        <input type="text" placeholder="Digite Tipo" name="tipo_proyecto" id="tipo_proyecto">
+        <a href="#" class="btn_empezar" onclick="mostrar()">Enviar</a>
+      </form>
+    </main>
+
+    <aside class="table_main">
+
+      <header class="header_search">
+        <div class="search_proyecto">
+          <input type="search" name="search" id="search_main" placeholder="Search">
+          <a href="#" disable onclick="validarBusqueda()"><i class="fas fa-search"></i></a>
+        </div>
+
+        <div class="radios_search">
+          <input type="radio" id="r_codigo" name="radio_search" value="Por Codigo" checked>
+          <label for="r_codigo">Por Codigo</label><br>
+          <input type="radio" id="r_nombre" name="radio_search" value="Por Nombre">
+          <label for="r_nombre">Por Nombre</label><br>
+        </div>
+
+      </header>
+
+      <div class="table_main_table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>Descripcion</th>
+              <th>Fecha Inicio</th>
+              <th>Tipo de Proyecto</th>
+              <th>E/M</th>
+            </tr>
+          </thead>
+          <tbody id="tabla_body">
+            <tr>
+              <th>1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td><a href="#"><i class="fas fa-trash"></i> </a> <a href="#">
+                  <i class="fas fa-edit"></i></a></td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>@mdo</td>
+              <td><a href="#"><i class="fas fa-trash"></i> </a> <a href="#">
+                  <i class="fas fa-edit"></i></a></td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td><a href="#"><i class="fas fa-trash"></i> </a> <a href="#">
+                  <i class="fas fa-edit"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </div>
+  </main>
+
+ 
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+</body>
+
+</html>

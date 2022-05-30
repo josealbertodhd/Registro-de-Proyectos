@@ -1,0 +1,142 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.page_main{
+    display: flex;
+}
+
+.page_main .main_form .header_form h2{
+    padding: 10px;
+    text-align: center;
+    color: rgb(46, 168, 46);
+    margin-bottom: 20px;
+}
+
+.page_main .main_form{
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    padding-top: 30px;
+    border-right: 1px solid rgb(46, 168, 46);
+    
+}
+
+.page_main .main_form .form_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page_main .main_form .form_items input{
+    display: block;
+    width: 70%;
+    height: 25px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-left: 1px solid rgb(46, 168, 46);
+    border-bottom: 1px solid rgb(216, 205, 205);
+    border-radius: 10px;
+}
+
+.page_main .main_form .form_items a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(37, 172, 37);
+    color: white;
+    margin-top: 40px;
+    border: 1px rgb(37, 172, 37) solid;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.page_main .table_main{
+    width: 65%;
+    margin-left: 35%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+
+.page_main .table_main .header_search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 15px;
+    box-shadow: 0px 3px 4px 0px rgb(233, 229, 229);
+    position: sticky;
+}
+
+.page_main .table_main .header_search .search_proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(221, 212, 212);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.page_main .table_main .header_search .search_proyecto input{
+    padding-left: 20px;
+    border: none;
+}
+
+.page_main .table_main .table_main_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page_main .table_main .table_main_table table{
+    border-radius: 10px;
+}
+
+.page_main .table_main .table_main_table table thead tr{
+    background-color: rgb(46, 168, 46);
+    padding: 10px;
+    color: white;
+}
+
+.page_main .table_main .table_main_table table thead tr,td,th{
+    text-align: center;
+    padding: 10px;
+}
+
+.page_main .table_main .table_main_table table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.page_main .table_main .table_main_table table tbody tr td a:first-child{
+    display: inline-flex;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_main .table_main .table_main_table table tbody tr td a:nth-child(2){
+    display: inline-flex;
+    background-color: yellow;
+    color: white;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+
