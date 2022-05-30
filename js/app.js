@@ -48,7 +48,8 @@ function mostrar() {
                                <td> ${arrayProyectos[i].descripcionProyecto} </td>
                                <td> ${arrayProyectos[i].fechaInicio} </td>
                                <td> ${arrayProyectos[i].tipoProyecto} </td>
-                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
+                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> 
+                               <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
                                <i class="fas fa-edit"></i></a></td>
                             </tr>
                                `;
@@ -90,8 +91,8 @@ function validarBusqueda() {
                                    <td> ${objeto.descripcionProyecto} </td>
                                    <td> ${objeto.fechaInicio} </td>
                                    <td> ${objeto.tipoProyecto} </td>
-                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${objeto.codigoProyecto})">
-                                   <i class="fas fa-edit"></i></a></td>
+                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"></i></a> 
+                                   <a href="#" onclick="modificar(${objeto.codigoProyecto})"><i class="fas fa-edit"></i></a></td>
                                 </tr>
                                    `;
 
@@ -118,8 +119,8 @@ function validarBusqueda() {
                                    <td> ${objeto.descripcionProyecto} </td>
                                    <td> ${objeto.fechaInicio} </td>
                                    <td> ${objeto.tipoProyecto} </td>
-                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"</i> </a> <a href="#" onclick="modificar(${objeto.codigoProyecto})"> 
-                                   <i class="fas fa-edit"></i></a></td>
+                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"></i></i> </a> 
+                                   <a href="#" onclick="modificar(${objeto.codigoProyecto})"><i class="fas fa-edit"></i></a></td>
                                 </tr>
                                    `;
 
@@ -151,7 +152,8 @@ function eliminar(valor) {
                                <td> ${arrayProyectos[i].descripcionProyecto} </td>
                                <td> ${arrayProyectos[i].fechaInicio} </td>
                                <td> ${arrayProyectos[i].tipoProyecto} </td>
-                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
+                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> 
+                               <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
                                <i class="fas fa-edit"></i></a></td>
                             </tr>
                                `;
@@ -190,7 +192,8 @@ function modificar(valor){
                                <td> ${arrayProyectos[i].descripcionProyecto} </td>
                                <td> ${arrayProyectos[i].fechaInicio} </td>
                                <td> ${arrayProyectos[i].tipoProyecto} </td>
-                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
+                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> 
+                               <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
                                <i class="fas fa-edit"></i></a></td>
                             </tr>
                                `;
