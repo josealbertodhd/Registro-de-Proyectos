@@ -48,7 +48,7 @@ function mostrar() {
                                <td> ${arrayProyectos[i].descripcionProyecto} </td>
                                <td> ${arrayProyectos[i].fechaInicio} </td>
                                <td> ${arrayProyectos[i].tipoProyecto} </td>
-                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos.codigoProyecto})">
+                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
                                <i class="fas fa-edit"></i></a></td>
                             </tr>
                                `;
@@ -90,7 +90,7 @@ function validarBusqueda() {
                                    <td> ${objeto.descripcionProyecto} </td>
                                    <td> ${objeto.fechaInicio} </td>
                                    <td> ${objeto.tipoProyecto} </td>
-                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos.codigoProyecto})">
+                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${objeto.codigoProyecto})">
                                    <i class="fas fa-edit"></i></a></td>
                                 </tr>
                                    `;
@@ -118,7 +118,7 @@ function validarBusqueda() {
                                    <td> ${objeto.descripcionProyecto} </td>
                                    <td> ${objeto.fechaInicio} </td>
                                    <td> ${objeto.tipoProyecto} </td>
-                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"</i> </a> <a href="#" onclick="modificar(${arrayProyectos.codigoProyecto})"> 
+                                   <td><a href="#" onclick="eliminar(${objeto.codigoProyecto})"><i class="fas fa-trash"</i> </a> <a href="#" onclick="modificar(${objeto.codigoProyecto})"> 
                                    <i class="fas fa-edit"></i></a></td>
                                 </tr>
                                    `;
@@ -151,7 +151,7 @@ function eliminar(valor) {
                                <td> ${arrayProyectos[i].descripcionProyecto} </td>
                                <td> ${arrayProyectos[i].fechaInicio} </td>
                                <td> ${arrayProyectos[i].tipoProyecto} </td>
-                               <td><a href="#" onclick="eliminar(${arrayProyectos.codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos.codigoProyecto})">
+                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
                                <i class="fas fa-edit"></i></a></td>
                             </tr>
                                `;
@@ -163,15 +163,21 @@ function eliminar(valor) {
 }
 
 function modificar(valor){
+
   const posicion = arrayProyectos.findIndex((elemento) => {
     return elemento.codigoProyecto == valor;
   });
 
-  arrayProyectos[posicion].codigoProyecto = prompt("Digite Codigo de Proyecto", "Codigo").toString;
-  arrayProyectos[posicion].nombreProyecto = prompt("Digite Nombre de Proyecto", "Nombre").toString;
-  arrayProyectos[posicion].descripcionProyecto = prompt("Digite Descripcion de Proyecto", "Descripcion").toString;
-  arrayProyectos[posicion].fechaInicio = prompt("Digite Fecha de Inicio de Proyecto", "Fecha").toString;
-  arrayProyectos[posicion].tipoProyecto = prompt("Digite Tipo de Proyecto", "Tipo de Proyecto").toString;
+  let codigo = prompt("Digite Codigo de Proyecto", "Codigo");
+  arrayProyectos[posicion].codigoProyecto = codigo;
+  let nombre = prompt("Digite Nombre de Proyecto", "Nombre");
+  arrayProyectos[posicion].nombreProyecto = nombre;
+  let descripcion = prompt("Digite Descripcion de Proyecto", "Descripcion");
+  arrayProyectos[posicion].descripcionProyecto = descripcion;
+  let fecha = prompt("Digite Fecha de Inicio de Proyecto", "Fecha");
+  arrayProyectos[posicion].fechaInicio = fecha;
+  let tipo = prompt("Digite Tipo de Proyecto", "Tipo de Proyecto");
+  arrayProyectos[posicion].tipoProyecto =  tipo;
 
   const div = document.querySelector("#tabla_body");
     div.innerHTML = "";
@@ -184,7 +190,7 @@ function modificar(valor){
                                <td> ${arrayProyectos[i].descripcionProyecto} </td>
                                <td> ${arrayProyectos[i].fechaInicio} </td>
                                <td> ${arrayProyectos[i].tipoProyecto} </td>
-                               <td><a href="#" onclick="eliminar(${arrayProyectos.codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos.codigoProyecto})">
+                               <td><a href="#" onclick="eliminar(${arrayProyectos[i].codigoProyecto})"><i class="fas fa-trash"></i> </a> <a href="#" onclick="modificar(${arrayProyectos[i].codigoProyecto})">
                                <i class="fas fa-edit"></i></a></td>
                             </tr>
                                `;
